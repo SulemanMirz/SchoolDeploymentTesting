@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+focus-within ~ label,
+input:not(:placeholder-shown) ~ label {
+  @apply transform scale-75 -translate-y-6;
+}
+
+input:focus-within ~ label {
+  @apply text-white;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Saira, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: #111111;
+  overflow: hidden;
+  font-weight: 200;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.max-w-page {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.PhoneInputInput{
+  padding: 25px  16px 8px 16px;
+  background-color: #1B1B1B;
+  border: 0px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  font-family: Saira;
+  font-style: normal !important;
+  font-weight: 200 !important;
+  font-size: 16px;
+  color:#fff !important
+}
+
+.PhoneInputInput:focus-visible{
+  outline: none !important;
+}
+
+
+.PhoneInput--focus .PhoneInputInput{
+    background-color: #fff !important;
+    color: #000000 !important;
+    font-weight: 400 !important;
+    outline: none;
+}
+
+
+.PhoneInputCountry{
+  padding-right: 16px !important;
+  padding-left: 16px !important;
+  margin-right: 0px !important;
+  background-color: #282828;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
